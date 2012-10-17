@@ -1,4 +1,3 @@
-
 public class Spy {
     int identifier;
     private static int spyCount = 0;
@@ -10,9 +9,8 @@ public class Spy {
     }
     public void die(){
         spyCount--;
-        System.out.println("Spy" + identifier + "has been detected and eliminated!");
+        System.out.println("Spy " + identifier + " has been detected and eliminated!");
         System.out.println("There are now " + spyCount + " spies.");
-        this.get= null;
     }
     public static void main(String[] args) {
         Spy spyOne = new Spy(111);
